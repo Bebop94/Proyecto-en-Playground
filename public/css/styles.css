@@ -10,7 +10,11 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #EAC926;
+    z-index: 1;
 }
 
 header li {
@@ -89,6 +93,7 @@ header div.burger-menu {
 
 img.banner {
     width: 100%;
+    margin-top:150px;
 }
 
 .create-form {
@@ -246,7 +251,7 @@ footer p.cr {
     padding-top: 20px
 }
 
-@media (min-width: 378px){
+@media (min-width: 420px){
 
     header nav{
         display: flex;
