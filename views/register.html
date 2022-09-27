@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/normalize.css">
     </head>
     <body>
-        <form action="#" method="post">
+        <form action="/" method="get">
             <div class="control-formulario">
                 <label>Nombre</label>
                 <input type="text" name="nombre" class="control">
@@ -36,12 +36,33 @@
                 <select type="user-profile" class="control">
                     <option value="buyer">Comprador</option>
                     <option value="seller">Vendedor</option>
+                </select>
             </div>
-
             <div class="control-formulario">
-                <label>Hogar</label>
-                <input type="checkbox" name="en-oferta">
+                <h2>Categoria de Interes</h2>
+                <label>Electro <input type="checkbox" name="electro"></label>
+                <label>Moda <input type="checkbox" name="moda"></label> 
+                <label>Hogar <input type="checkbox" name="hogar"></label>    
+                <label>Jugueteria <input type="checkbox" name="jugueteria"></label>
+                <label>Vida sana <input type="checkbox" name="vida-sana"></label>
             </div>
-            
+            <div>
+                <label>Foto de Usuario</label>
+                <input type="file">
+            </div>
+            <div class="control-formulario">
+                <label>Contraseña</label>
+                <input type="password" name="password" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Confirmar contraseña</label>
+                <input type="password" name="password-repeat" class="control">
+            </div>
+            <div>
+                <button type="submit">Guardar y Salir</button>
+            </div>
+            <div>
+                <button type="reset">Reiniciar</button>
+            </div>
         </form>
     </body>
