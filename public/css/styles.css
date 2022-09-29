@@ -204,7 +204,7 @@ main section article div.price-discount p.discount{
 }
 
 body main .description{
-    visibility: hidden;
+    display: none;
     color: #666;
     font-weight: normal;
 }
@@ -237,15 +237,20 @@ footer div {
     padding: 10px;
 }
 
+footer div p{
+    font-size: 12px;
+}
+
 footer i {
     margin: auto;
     padding: 10px;
     color: #0044AA;
     font-size: 24px;
+    transition: color 450ms;
 }
 
 footer p.cr {
-    font-size: 12px;
+    font-size: 10px;
     color: #666;
     text-align: left;
     padding-top: 20px
@@ -290,10 +295,6 @@ footer p.cr {
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
 
-    body main .description{
-        visibility: visible;
-    }
-
     header div.burger-menu {
         display: none; 
     }
@@ -330,20 +331,36 @@ footer p.cr {
         justify-content: space-between;
     }
 
-
     body main article {
         width: 20%;
     }
     
-    main section article{
+    main section article:hover{
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
 
-    body main .description{
-        visibility: visible;
+    main section article:hover .description{
+        display: block;
+    }
+
+    main section article div.truck i {
+        transition: transform 450ms;
+    }
+
+    main section article:hover div.truck i {
+        transform: rotate(-90deg);
     }
 
     header div.burger-menu {
         display: none;
+    }
+
+    footer section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer section div:hover i{
+        color:#39b54a;
     }
 }
