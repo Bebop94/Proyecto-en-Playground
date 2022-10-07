@@ -1,0 +1,199 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #EAC926;
+    z-index: 1;
+}
+
+header li {
+    font-size: 12px;
+}
+
+header div.top-header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header div.top-header p{
+    width: 100%;
+    padding: 10px;
+}
+
+header div.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+header .form {
+    display: flex;
+    width: 50%;
+    flex-wrap: nowrap;
+}
+
+header .form .input {
+    background-color: #FFF;
+    border: solid 1px #000;
+    padding: 5px;
+    color: #666;
+    display: flex;
+    width: 90%;
+    border-radius: 5px;
+}
+
+header .form .submit {
+    background-color: #FFF;
+    border: solid 1px #000;
+    padding: 2px;
+    color: #666;
+    width: 10%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+header nav{
+    display: none;
+}
+
+header nav ul{
+    list-style: none;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+header div.burger-menu i {
+    background-color: #0044AA;
+    color: #FFF;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    border-radius: 5px; 
+}
+
+header div.burger-menu {
+    text-align: center;
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+    margin: auto;
+}
+
+footer section {
+    padding: 10px 20px
+}
+
+footer div {
+    margin: auto;
+    padding: 10px;
+}
+
+footer div p{
+    font-size: 12px;
+}
+
+footer i {
+    margin: auto;
+    padding: 10px;
+    color: #0044AA;
+    font-size: 24px;
+    transition: color 450ms;
+}
+
+footer p.cr {
+    font-size: 10px;
+    color: #666;
+    text-align: left;
+    padding-top: 20px
+}
+
+
+
+@media (min-width: 420px){
+
+    header nav{
+        display: flex;
+        justify-content: space-between
+    }
+
+    header nav ul{
+        display: flex;
+        margin: 0px 20px
+    }
+
+    header nav ul li{
+        margin: 10px 10px;
+        padding: 2px
+    }
+
+    header div.overall-top-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header div.top-header {
+        width: 60%
+    }
+
+    header div.form {
+        justify-content: space-between;
+    }
+
+    header div.burger-menu {
+        display: none; 
+    }
+}
+
+@media (min-width: 768px){
+
+    header nav{
+        display: flex;
+        justify-content: space-between
+    }
+
+    header nav ul{
+        display: flex;
+        margin: 0px 20px
+    }
+
+    header nav ul li{
+        margin: 10px 10px;
+        padding: 2px
+    }
+
+    header div.overall-top-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header div.top-header {
+        width: 60%
+    }
+
+    header div.form {
+        justify-content: space-between;
+    }
+
+    header div.burger-menu {
+        display: none;
+    }
+
+    footer section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer section div:hover i{
+        color:#39b54a;
+    }
+}
