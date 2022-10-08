@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Bienvenidos a MercadoLiebre</title>
+        <title>Registrate en MercadoLiebre</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/969d33ecfa.js" crossorigin="anonymous"></script>
@@ -34,7 +34,7 @@
                     <li>Ayuda</li>
                 </ul>
                 <ul class="user-nav">
-                    <li>Creá tu cuenta<i class="fa-solid fa-id-card"></i></li>
+                    <li><a href="register.html">Creá tu cuenta<i class="fa-solid fa-id-card"></a></i></li>
                     <li>Tiendas Oficiales<i class="fa-solid fa-right-to-bracket"></i></li>
                     <li>Mis Compras<i class="fa-solid fa-basket-shopping"></i></li>
                 </ul>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="control-formulario">
                     <label>Nombre de usuari@</label>
-                    <input type="text" name="username" placeholder="Pepe123" class="control">
+                    <input type="text" name="username" placeholder="ej: Pepe94" class="control">
                 </div>
                 <div class="control-formulario">
                     <label>Fecha de Nacimiento</label>
@@ -63,11 +63,12 @@
                 </div>
                 <div class="control-formulario">
                     <label>Domicilio</label>
-                    <input type="text" name="username" placeholder="Calle Falsa 123" class="control">
+                    <input type="text" name="username" class="control">
                 </div>
                 <div class="control-formulario">
                     <label>Perfil de Usuario</label>
                     <select type="user-profile" class="control">
+                        <option value="" disabled selected hidden>Elija una opción</option>
                         <option value="buyer">Comprador</option>
                         <option value="seller">Vendedor</option>
                     </select>
@@ -93,10 +94,10 @@
                     <input type="password" name="password-repeat" class="control">
                 </div>
                 <div>
-                    <button type="submit">Guardar y Salir</button>
+                    <button type="submit" class="end-button end-button--save-exit">Guardar y Salir</button>
                 </div>
                 <div>
-                    <button type="reset">Reiniciar</button>
+                    <button type="reset" class="end-button end-button--reset">Reiniciar</button>
                 </div>
             </form>
         </main>
