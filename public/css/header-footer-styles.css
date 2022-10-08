@@ -137,6 +137,11 @@ footer p.cr {
 
 @media (min-width: 420px){
 
+    header div.logo {
+        width: 200px;
+        padding: 10px;
+    }
+
     header nav{
         display: flex;
         justify-content: space-between
@@ -158,7 +163,9 @@ footer p.cr {
     }
 
     header div.top-header {
-        width: 60%
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
     }
 
     header div.form {
@@ -171,6 +178,11 @@ footer p.cr {
 }
 
 @media (min-width: 768px){
+
+    header div.logo {
+        width: 300px;
+        padding: 10px;
+    }
 
     header nav{
         display: flex;
@@ -190,10 +202,6 @@ footer p.cr {
         display: flex;
         align-items: center;
         justify-content: space-around;
-    }
-
-    header div.top-header {
-        width: 60%
     }
 
     header div.form {
