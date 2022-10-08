@@ -145,9 +145,6 @@ h4.description, .discount {
     body main article {
         width: 40%;
     }
-
-    main section article{
-    }
 }
 
 @media (min-width: 768px){

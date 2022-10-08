@@ -83,7 +83,7 @@ main form{
     color: #FFF
 }
 
-.end-button--reset{
-    background-color: #000;
+.end-button--save-exit:hover{
+    background-color: #0022AA;
     color: #FFF
 }
