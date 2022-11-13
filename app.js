@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
+const session = require('express-session')
+
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: false}))
+app.use(session({ secret : 'A'}))
 
 let port = process.env.PORT;
 if (port == null || port == "") {
