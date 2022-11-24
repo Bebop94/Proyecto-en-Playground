@@ -1,36 +1,55 @@
-<!--<form action="/crear-producto" method="POST" class="create-form">
-            <div class="control-formulario">
-                <label>Nombre del producto:</label>
-                <input type="text" name="nombre" class="control">
-            </div>
-            <div class="control-formulario">
-                <label>Precio:</label>
-                <input type="number" name="precio" placeholder="123.56" class="control">
-            </div>
-            <div class="control-formulario">
-                <label>Categoria</label>
-                <select type="categoria" class="control">
-                    <option value="hogar">Hogar</option>
-                    <option value="electro">Electro</option>
-                    <option value="indumentaria">Indumentaria</option>
-                </select>
-            </div>
-            <div class="control-formulario">
-                <label>Provincia</label>
-                <select type="provincia" class="control">
-                    <option value="juj">Jujuy</option>
-                    <option value="bsas">Buenos Aires</option>
-                    <option value="ros">Rosario</option>
-                </select>
-            </div>
-            <div class="control-formulario">
-                <label>Descripcion:</label>
-                <textarea type="descripcion" class="control"></textarea>
-            </div>
-            <div class="control-formulario">
-                <label>En Oferta:</label>
-                <input type="checkbox" name="en-oferta">
-            </div>
-            <button type="submit" class="form-button">Guardar</button>
-            <button type="reset" class="form-button">Borrar</button>
-        </form>-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registrate en MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/969d33ecfa.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/register-styles.css">
+        <link rel="stylesheet" href="/css/header-footer-styles.css">
+    </head>
+    <body>
+        <%- include('../partials/header') %>
+        <main>
+            <form action="/crear-producto" method="POST" class="create-form">
+                <div class="control-formulario">
+                    <label>Nombre del producto:</label>
+                    <input type="text" name="nombre" class="control">
+                </div>
+                <div class="control-formulario">
+                    <label>Precio:</label>
+                    <input type="number" name="precio" placeholder="123.56" class="control">
+                </div>
+                <div class="control-formulario">
+                    <label>Categoria</label>
+                    <select type="categoria" class="control">
+                        <option value="hogar">Hogar</option>
+                        <option value="electro">Electro</option>
+                        <option value="indumentaria">Indumentaria</option>
+                    </select>
+                </div>
+                <div class="control-formulario">
+                    <label>Provincia</label>
+                    <select type="provincia" class="control">
+                        <option value="juj">Jujuy</option>
+                        <option value="bsas">Buenos Aires</option>
+                        <option value="ros">Rosario</option>
+                    </select>
+                </div>
+                <div class="control-formulario">
+                    <label>Descripcion:</label>
+                    <textarea type="descripcion" class="control"></textarea>
+                </div>
+                <div class="control-formulario">
+                    <label>En Oferta:</label>
+                    <input type="checkbox" name="en-oferta">
+                </div>
+                <button type="submit" class="end-button end-button--save-exit">Guardar</button>
+                <button type="reset" class="end-button end-button--reset">Borrar</button>
+            </form>
+        </main>
+        <%- include('../partials/footer') %>
+    </body>
+</html>
